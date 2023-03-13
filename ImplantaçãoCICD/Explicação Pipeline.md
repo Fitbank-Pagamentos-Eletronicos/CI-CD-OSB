@@ -6,7 +6,7 @@
     environment {
         SERVER  = 'nome do servidor'
     }
-   Esse primeiro Step será reponsável por determinar qual o servidor que será utilizado.
+   Esse primeiro passo será reponsável por determinar qual o servidor que será utilizado.
    Basta colocar o nome do servidor que irá ser utilizado  na variavel **SERVER** entre aspas simples.
   
   ***2. Segundo passo do Pipline.***
@@ -21,7 +21,7 @@
         }
    ```
    
-   Esse seundo passo será reponsável por  selecionar e clonar o seu repositorio, coloque o link do seu git e credentialsId entre aspas simples.
+   Esse seundo passo será reponsável por  selecionar e clonar o seu repositório, coloque o link do seu git e credentialsId entre aspas simples.
    
    ***3. Terceiro passo do Pipline.***
 ```
@@ -47,7 +47,7 @@ stage ("Build Application with Yarn") {
             }
         }
 ``` 
-Esse Quarto passo será reponsável por fazer o build da aplicação.
+Esse quarto passo será reponsável por fazer o build da aplicação.
 
  ***5. Quinto passo do Pipline.***
  ```
@@ -60,7 +60,7 @@ Esse Quarto passo será reponsável por fazer o build da aplicação.
             }
         }
  ```
- Esse Quinto passo será reponsável por pegar os arquivos gerados no build do passo anterior, comprimir eles e mandar para uma pasta .zip dentro do servidor de Jenkins.
+ Esse quinto passo será reponsável por pegar os arquivos gerados no build do passo anterior, comprimir eles e mandar para uma pasta .zip dentro do servidor de Jenkins.
  
  ***6. Sexto passo do Pipline.***
 ```
@@ -74,7 +74,7 @@ stage ("Send files into server") {
             }
         }
  ```     
- Esse Sexto passo será reponsável por enviar os arquivios que está na sua pasta zipada do Jenkins, e enviar para o seu servidor.
+ Esse sexto passo será reponsável por enviar os arquivios que está na sua pasta zipada do Jenkins, e enviar para o seu servidor.
  
  ***7. Sétimo passo do Pipline.***
 ```
@@ -105,7 +105,7 @@ stage('Uncompress Files Into Server'){
             }
         }
   ``` 
-  Esse Sétimo passo será reponsável por descompactar os arquivos que estão zipados dentro do seu servidor, e mandar para a pasta destino final que será usada pela aplicação.
+  Esse sétimo passo será reponsável por descompactar os arquivos que estão zipados dentro do seu servidor, e mandar para a pasta destino final que será usada pela aplicação.
    
    ***8. Oitavo passo do Pipline.***
  ```
@@ -122,7 +122,7 @@ stage('Uncompress Files Into Server'){
     }
 }
 ```
-Esse Oitavo e último passo será reponsável por finalizar o pipeline, fazendo a limpeza do jenkins, e relatando se o deploy ocorreu com sucesso ou falha.
+Esse oitavo e último passo será reponsável por finalizar o pipeline, fazendo a limpeza do jenkins, e relatando se o deploy ocorreu com sucesso ou falha.
  
  
  
