@@ -308,7 +308,7 @@ Esse Quarto passo será reponsável por fazer o build da aplicação.
             }
         }
  ```
- Esse Quinto passo será reponsável por pegar os arquivos gerados no build do passo anterior, comprimir eles e mandar para uma pasta .zip dentro do servidor de Jenkins.
+ Esse quinto passo será reponsável por pegar os arquivos gerados no build do passo anterior, comprimir eles e mandar para uma pasta .zip dentro do servidor de Jenkins.
  
  ***6. Sexto passo do Pipline.***
 ```
@@ -322,7 +322,7 @@ stage ("Send files into server") {
             }
         }
  ```     
- Esse Sexto passo será reponsável por enviar os arquivios que está na sua pasta zipada do Jenkins, e enviar para o seu servidor.
+ Esse sexto passo será reponsável por enviar os arquivios que está na sua pasta zipada do Jenkins, e enviar para o seu servidor.
  
  ***7. Sétimo passo do Pipline.***
 ```
@@ -337,16 +337,16 @@ stage('Uncompress Files Into Server'){
                     \$CRED = New-Object System.Management.Automation.PSCredential -ArgumentList \$USER, \$PASSWORD
 
                     Invoke-Command -ComputerName \$SERVER -Credential \$CRED -ScriptBlock {
-                        if(-Not (Test-Path -Path "C:\\zips para extracao\\OSBMobile")){
-                            mkdir "C:\\zips para extracao\\OSBMobile" -Force
+                        if(-Not (Test-Path -Path "C:\\zips para extracao\\SUA PASTA")){
+                            mkdir "C:\\zips para extracao\\SUA PASTA" -Force
                         }
 
-                        Remove-Item C:\\FitBank\\Deploy\\Sites\\OSBMobile\\static\\* -Recurse -Force -Verbose
+                        Remove-Item C:\\SEU DIRETÓRIO\\static\\* -Recurse -Force -Verbose
 
-                        Expand-Archive -Path "C:\\zips para extracao\\OSBMobile.zip" -DestinationPath "C:\\zips para extracao\\OSBMobile" -Force
-                        Copy-Item -Path "C:\\zips para extracao\\OSBMobile\\*" -Destination C:\\FitBank\\Deploy\\Sites\\OSBMobile  -Recurse -Force -Verbose
+                        Expand-Archive -Path "C:\\zips para extracao\\SUA PASTA.zip" -DestinationPath "C:\\zips para extracao\\SUA PASTA" -Force
+                        Copy-Item -Path "C:\\zips para extracao\\SUA PASTA\\*" -Destination C:\\SEU DIRETÓRIO\\SUA PASTA  -Recurse -Force -Verbose
 
-                        Remove-Item "C:\\zips para extracao\\OSBMobile" -Recurse -Force
+                        Remove-Item "C:\\zips para extracao\\SUA PASTA" -Recurse -Force
                     }
                 """
                 }
