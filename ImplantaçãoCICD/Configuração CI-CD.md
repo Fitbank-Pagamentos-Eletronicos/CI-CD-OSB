@@ -1,4 +1,4 @@
-# Configuação de servidor para instalação do orquestrador (Jenkins)
+# Configuação do servidor para instalação do orquestrador (Jenkins)
 
 ## Pré-requisitos
 
