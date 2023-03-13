@@ -204,7 +204,7 @@ pipeline {
 6.Define o estágio "Deploy".
 7.Execute algumas etapas relacionadas ao estágio "Deploy".
 
-## Fundamentos do pipeline com Scrit:
+## Fundamentos do pipeline com Script:
 
 Na sintaxe do pipeline com script, um ou mais nodeblocos fazem o trabalho principal em todo o pipeline. Embora esse não seja um requisito obrigatório da sintaxe do Pipeline com script, confinar o trabalho do seu Pipeline dentro de um node bloco resulta em duas coisas:
 
@@ -215,7 +215,7 @@ Cuidado: Dependendo da configuração do Jenkins, alguns espaços de trabalho po
 
 ## Exemplo de pipeline
 
-1. Pipelineé a sintaxe específica do Pipeline Declarativo que define um "bloco" contendo todo o conteúdo e instruções para executar todo o Pipeline.
+1. Pipeline é a sintaxe específica do Pipeline Declarativo que define um "bloco" contendo todo o conteúdo e instruções para executar todo o Pipeline.
 
 2. Agent é a sintaxe específica do pipeline declarativo que instrui o Jenkins a alocar um executor (em um nó) e espaço de trabalho para todo o pipeline.
 
