@@ -89,16 +89,16 @@ stage('Uncompress Files Into Server'){
                     \$CRED = New-Object System.Management.Automation.PSCredential -ArgumentList \$USER, \$PASSWORD
 
                     Invoke-Command -ComputerName \$SERVER -Credential \$CRED -ScriptBlock {
-                        if(-Not (Test-Path -Path "C:\\zips para extracao\\OSBMobile")){
-                            mkdir "C:\\zips para extracao\\OSBMobile" -Force
+                        if(-Not (Test-Path -Path "C:\\zips para extracao\\SUA PASTA")){
+                            mkdir "C:\\zips para extracao\\SUA PASTA" -Force
                         }
 
-                        Remove-Item C:\\FitBank\\Deploy\\Sites\\OSBMobile\\static\\* -Recurse -Force -Verbose
+                        Remove-Item C:\\SEU DIRETÓRIO\\static\\* -Recurse -Force -Verbose
 
-                        Expand-Archive -Path "C:\\zips para extracao\\OSBMobile.zip" -DestinationPath "C:\\zips para extracao\\OSBMobile" -Force
-                        Copy-Item -Path "C:\\zips para extracao\\OSBMobile\\*" -Destination C:\\FitBank\\Deploy\\Sites\\OSBMobile  -Recurse -Force -Verbose
+                        Expand-Archive -Path "C:\\zips para extracao\\SUA PASTA.zip" -DestinationPath "C:\\zips para extracao\\SUA PASTA" -Force
+                        Copy-Item -Path "C:\\zips para extracao\\SUA PASTA\\*" -Destination C:\\SEU DIRETÓRIO\\SUA PASTA  -Recurse -Force -Verbose
 
-                        Remove-Item "C:\\zips para extracao\\OSBMobile" -Recurse -Force
+                        Remove-Item "C:\\zips para extracao\\SUA PASTA" -Recurse -Force
                     }
                 """
                 }
