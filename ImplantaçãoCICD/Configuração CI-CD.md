@@ -52,7 +52,7 @@ Execute as seguintes etapas abaixo para editar a política de segurança local d
 
 7. Na caixa de diálogo Selecionar usuários ou grupos , localize o usuário que deseja inserir e clique em OK
 
-8.Clique em OK nas Propriedades de logon como um serviço para salvar as alterações.
+8. Clique em OK nas Propriedades de logon como um serviço para salvar as alterações.
 
 > Depois de concluir as etapas acima, tente fazer login novamente com o usuário adicionado.
 
