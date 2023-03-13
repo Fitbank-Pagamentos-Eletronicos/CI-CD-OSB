@@ -243,7 +243,7 @@ Cuidado: Dependendo da configuração do Jenkins, alguns espaços de trabalho po
 
 - Pipeline 
 Será feito no modo de script na forma pipeline declarativo.
-O arquivo de configuração do pipeline e todos os seus passos, estará disponivel no repositorio do CI/CD para melhor organização. 
+O arquivo de configuração do pipeline e todos os seus passos, estará disponivel no repositório do CI/CD para melhor organização. 
 
 # **Explicação passo a passo do pipeline**
 
@@ -269,7 +269,7 @@ O arquivo de configuração do pipeline e todos os seus passos, estará disponiv
         }
    ```
    
-   Esse seundo passo será reponsável por  selecionar e clonar o seu repositorio, coloque o link do seu git e credentialsId entre aspas simples.
+   Esse segundo passo será reponsável por  selecionar e clonar o seu repositório, coloque o link do seu git e credentialsId entre aspas simples.
    
    ***3. Terceiro passo do Pipline.***
 ```
@@ -282,7 +282,7 @@ O arquivo de configuração do pipeline e todos os seus passos, estará disponiv
             }
         } 
  ```    
-  Esse Terceiro passo será reponsável por baixar os pacotes do Yarn e instalar o mesmo.
+  Esse terceiro passo será reponsável por baixar os pacotes do Yarn e instalar o mesmo.
   
   ***4. Quarto passo do Pipline.***
 ```
@@ -295,7 +295,7 @@ stage ("Build Application with Yarn") {
             }
         }
 ``` 
-Esse Quarto passo será reponsável por fazer o build da aplicação.
+Esse quarto passo será reponsável por fazer o build da aplicação.
 
  ***5. Quinto passo do Pipline.***
  ```
@@ -353,7 +353,7 @@ stage('Uncompress Files Into Server'){
             }
         }
   ``` 
-  Esse Sétimo passo será reponsável por descompactar os arquivos que estão zipados dentro do seu servidor, e mandar para a pasta destino final que será usada pela aplicação.
+  Esse sétimo passo será reponsável por descompactar os arquivos que estão zipados dentro do seu servidor, e mandar para a pasta destino final que será usada pela aplicação.
    
    ***8. Oitavo passo do Pipline.***
  ```
@@ -370,6 +370,6 @@ stage('Uncompress Files Into Server'){
     }
 }
 ```
-Esse Oitavo e último passo será reponsável por finalizar o pipeline, fazendo a limpeza do jenkins, e relatando se o deploy ocorreu com sucesso ou falha.
+Esse oitavo e último passo será reponsável por finalizar o pipeline, fazendo a limpeza do jenkins, e relatando se o deploy ocorreu com sucesso ou falha.
  
 
